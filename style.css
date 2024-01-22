@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  /* background-color:#e2cdc1 ; */
+}
+nav {
+  background-color:#664289;
+   /* #1e0d04; */
+  /* #664289; */
+  color: white;
+  height: 35px;
+  padding: 12px;
+  font-size: 27px;
+  display: flex;
+  align-items: center;
+  /* font-family: 'Roboto Mono', monospace;  */
+}
+nav ul {
+  list-style: none;
+}
+
+.gamecontainer {
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 10vw);
+  grid-template-columns: repeat(3, 10vw);
+}
+.box {
+  border: 2px solid black;
+  font-size: 8vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box:hover {
+  background-color: rgb(200, 191, 209);
+}
+.gameinfo {
+  padding: 0px 34px;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+.imgbox img{
+    width:0;
+    transition: width 1s ease-in-out;
+}
+
+
+/* utility classes */
+.br {
+  border-right: 0;
+}
+.bl {
+  border-left: 0;
+}
+.bt {
+  border-top: 0;
+}
+.bb {
+  border-bottom: 0;
+}
+
+h1{
+  font-size: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* game won text */
+
+.info{
+    font-size: 50px;
+}
+
+/* for button */
+#down{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    margin-top: 54px;
+}
+#reset{
+    margin: 16px 54px;
+    padding: 18px 46px;
+    background-color: rgb(222, 209, 235);
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+/* .line{
+  background-color: black;
+  width: 3px;
+  height: 3px;
+} */
+
+@media screen and (max-width:880px)
+{
+  .gamecontainer{
+    flex-wrap: wrap;
+
+  }
+}
